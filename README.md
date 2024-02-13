@@ -34,9 +34,3 @@ Make your changes and commit them with descriptive commit messages.
 Push your changes to your fork.
 Submit a pull request to the main repository.
 Please review the Contribution Guidelines for more details.
-
-License
-This project is licensed under the MIT License.
-
-Contact
-For inquiries or support, please contact Project Maintainer Name.
