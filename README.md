@@ -15,7 +15,7 @@ Clone this repository to your local machine:
 
 bash
 Copy code
-git clone https://github.com/your-username/maki-trace.git
+git clone https://github.com/ambo18/DERA-app.git
 Follow the instructions in the project documentation to set up and run the application.
 
 ## Usage
