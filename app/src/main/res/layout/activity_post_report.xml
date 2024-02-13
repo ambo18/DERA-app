@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".activities.PostReportActivity">
+    tools:context=".fragments.activities.PostReportActivity">
 
     <ImageView
         android:id="@+id/ivBack"
@@ -32,17 +32,6 @@
         app:cornerRadius="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/ivReportingPolicy"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginEnd="8dp"
-        android:src="@drawable/ic_info"
-        app:layout_constraintBottom_toBottomOf="@+id/btnReport"
-        app:layout_constraintEnd_toStartOf="@+id/btnReport"
-        app:layout_constraintTop_toTopOf="@+id/btnReport"
-        tools:ignore="ContentDescription" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilDescription"

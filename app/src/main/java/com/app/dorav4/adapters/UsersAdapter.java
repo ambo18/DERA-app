@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.app.dorav4.R;
-import com.app.dorav4.activities.ViewUserActivity;
+import com.app.dorav4.fragments.activities.ViewUserActivity;
 import com.app.dorav4.holders.UsersViewHolder;
 import com.app.dorav4.models.Users;
 import com.squareup.picasso.Picasso;

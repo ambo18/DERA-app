@@ -1,6 +1,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Name -->
-    <string name="app_name">DORA</string>
+    <string name="app_name">Maki-Trace</string>
 
     <!-- String for dropdown menu -->
     <string-array name="disasters">
@@ -15,27 +15,27 @@
     </string-array>
 
     <!-- String used for onboarding slider -->
-    <string name="slider_first_title">Welcome to DORA!</string>
-    <string name="slider_first_desc">DORA is your disaster preparedness companion complete with guides, emergency hotlines, and other information to keep you safe.</string>
+    <string name="slider_first_title">Welcome to Maki-Trace!</string>
+    <string name="slider_first_desc">Maki-Trace is your disaster preparedness companion complete with guides, emergency hotlines, and other information to keep you safe.</string>
     <string name="slider_second_title">Be informed!</string>
-    <string name="slider_second_desc">DORA allows you to view disaster reports and evacuation centers to help you stay alert and prepared when disaster strikes.</string>
+    <string name="slider_second_desc">Maki-Trace allows you to view disaster reports to help you stay alert and prepared when disaster strikes.</string>
     <string name="slider_third_title">Be responsible!</string>
-    <string name="slider_third_desc">Please be mindful when posting disaster reports and make sure that all information is accurate and correct, you may refer to our Terms and Conditions for our policies.</string>
+    <string name="slider_third_desc">Please be mindful when posting disaster reports and make sure that all information is accurate and correct.</string>
     <string name="slider_fourth_title">Stay connected!</string>
-    <string name="slider_fourth_desc">DORA allows you to chat with other users online using an active internet connection as well as offline using our Bluetooth chat in case of network outages.</string>
+    <string name="slider_fourth_desc">Maki-Trace allows you to chat with other users online using an active internet connection as well as offline using our Bluetooth chat in case of network outages.</string>
 
     <!-- String used for account login -->
-    <string name="login_header">Welcome to DORA!</string>
+    <string name="login_header">Welcome to Maki-Trace!</string>
     <string name="login_description">This app requires login to enjoy all the features of this application</string>
     <string name="forgot_password">Forgot password?</string>
 
     <!-- String used for account registration -->
     <string name="register_header">We’re glad to have you!</string>
-    <string name="register_description">DORA keeps you updated with current disaster situations</string>
+    <string name="register_description">Maki-Trace keeps you updated with current disaster situations</string>
     <string name="account_setup">Account Setup</string>
 
     <!-- String used for account setup -->
-    <string name="setup_header">Welcome to DORA!</string>
+    <string name="setup_header">Welcome to Maki-Trace!</string>
     <string name="setup_description">We just need a few more details from you</string>
     <string name="profile_setup">Profile Setup</string>
     <string name="profile_picture">Add Profile Picture\n<i>(Optional)</i></string>
@@ -58,15 +58,15 @@
 
     <!-- String used for offline dashboard -->
     <string name="offline_header">Be disaster resilient</string>
-    <string name="offline_description">DORA is your disaster preparedness assistant</string>
+    <string name="offline_description">Maki-Trace is your disaster preparedness assistant</string>
     <string name="disaster_preparedness_guides">Disaster Preparedness Guides</string>
     <string name="disaster_preparedness_guides_description">Be prepared for disasters with the help of our expert-validated guides</string>
     <string name="emergency_hotlines">Emergency Hotlines</string>
-    <string name="emergency_hotlines_description">DORA has prepared the emergency hotlines that might come handy in disaster situations</string>
+    <string name="emergency_hotlines_description">Maki-Trace has prepared the emergency hotlines that might come handy in disaster situations</string>
     <string name="bluetooth_chat">Bluetooth Chat</string>
     <string name="bluetooth_chat_description">Send a message via Bluetooth which doesn\'t require an internet connection</string>
     <string name="access_online_features">Access Online Features</string>
-    <string name="access_online_features_description">To access the full DORA experience, a sign in is necessary</string>
+    <string name="access_online_features_description">To access the full Maki-Trace experience, a sign in is necessary</string>
 
     <!-- Strings used for emergency hotlines -->
     <string name="hotlines_header">Emergency Hotlines</string>
@@ -111,8 +111,8 @@
     <string name="placeholder_name">Juan Dela Cruz</string>
     <string name="placeholder_date">0 days ago</string>
     <string name="placeholder_disaster_type">Heavy Rain</string>
-    <string name="placeholder_address">España Blvd, Sampaloc, Manila, 1008 Metro Manila</string>
-    <string name="placeholder_description">There’s heavy rain in España Boulevard right now nearby UST.</string>
+    <string name="placeholder_address">General Mac Arthur, Eastern Samar, Philippines, 6807</string>
+    <string name="placeholder_description">There’s heavy rain in General Mac Arthur right now nearby Quinapondan.</string>
     <string name="placeholder_comments">0 comments</string>
     <string name="placeholder_upvotes">0 upvotes</string>
     <string name="placeholder_comment">This is a comment</string>
@@ -157,7 +157,7 @@
     <string name="edit_text_full_name">Full Name</string>
     <string name="edit_text_email">Email Address</string>
     <string name="edit_text_password">Password</string>
-    <string name="edit_text_report_details">What\'s the details of the report?</string>
+    <string name="edit_text_report_details">What\'s the details of the disaster?</string>
     <string name="edit_text_disaster_type">Disaster Type</string>
     <string name="edit_text_enter_a_message">Enter a message…</string>
     <string name="edit_text_enter_a_comment">Enter a comment…</string>
@@ -172,7 +172,7 @@
     <string name="button_change_email">Change Email Address</string>
     <string name="button_change_password">Change Password</string>
     <string name="button_logout">Logout</string>
-    <string name="button_report">Report</string>
+    <string name="button_report">Submit</string>
     <string name="button_lets_get_started">Let\'s get started</string>
     <string name="button_next">Next</string>
     <string name="button_reconnect">Reconnect</string>
@@ -189,10 +189,10 @@
     <string name="push_notifications_title">Push Notifications</string>
     <string name="push_notifications_on">Notifications about disaster reports, announcements, and chats are enabled</string>
     <string name="push_notifications_off">Notifications about disaster reports, announcements, and chats are disabled</string>
-    <string name="developers_title">Developers</string>
-    <string name="developers_summary">Castro, Michaela Marie N.\nCuadra, John Lester G.\nMaruno, Hitomi B.\nQuitor, Cedric John D.</string>
+    <string name="developers_title">Developer</string>
+    <string name="developers_summary">Tandugon, R-jhel B.</string>
     <string name="version_title">Version</string>
-    <string name="version_summary">4.0.0</string>
+    <string name="version_summary">1.0.0</string>
     <string name="privacy_policy_summary">Read our Privacy Policy</string>
     <string name="terms_and_conditions_summary">Read our Terms and Conditions</string>
     <string name="credits_summary">Read our references</string>

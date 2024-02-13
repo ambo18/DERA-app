@@ -2,11 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:id="@+id/primary">
         <item
-            android:id="@+id/navAdvisories"
-            android:icon="@drawable/ic_advisories"
-            android:title="@string/advisories_header" />
-
-        <item
             android:id="@+id/navGuides"
             android:icon="@drawable/ic_guides"
             android:title="@string/disaster_preparedness_guides" />
@@ -15,11 +10,6 @@
             android:id="@+id/navHotlines"
             android:icon="@drawable/ic_hotlines"
             android:title="@string/hotlines_header" />
-
-        <item
-            android:id="@+id/navFindFriends"
-            android:icon="@drawable/ic_find_friends"
-            android:title="@string/find_friends_header" />
 
         <item
             android:id="@+id/navSettings"

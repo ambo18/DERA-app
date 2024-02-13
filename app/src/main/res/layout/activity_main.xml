@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".activities.MainActivity">
+    tools:context=".fragments.activities.MainActivity">
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/sidebarNavigation"
@@ -70,17 +70,7 @@
                 app:bt_colorActive="@color/primary_green"
                 app:bt_colorInactive="@color/primary_gray"
                 app:bt_icon="@drawable/ic_home"
-                app:bt_title="Reports" />
-
-            <com.gauravk.bubblenavigation.BubbleToggleView
-                android:id="@+id/navChat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:bt_active="true"
-                app:bt_colorActive="@color/primary_green"
-                app:bt_colorInactive="@color/primary_gray"
-                app:bt_icon="@drawable/ic_chat"
-                app:bt_title="Chat" />
+                app:bt_title="Home" />
 
             <com.gauravk.bubblenavigation.BubbleToggleView
                 android:id="@+id/navMap"

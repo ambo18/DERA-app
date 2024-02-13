@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     app:layoutDescription="@xml/activity_splash_scene"
-    tools:context=".activities.SplashActivity">
+    tools:context=".fragments.activities.SplashActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/bg"

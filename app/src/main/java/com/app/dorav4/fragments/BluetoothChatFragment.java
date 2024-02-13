@@ -26,7 +26,7 @@ import androidx.fragment.app.FragmentActivity;
 
 import com.app.dorav4.Constants;
 import com.app.dorav4.R;
-import com.app.dorav4.activities.DeviceListActivity;
+import com.app.dorav4.fragments.activities.DeviceListActivity;
 import com.app.dorav4.utils.BluetoothChatService;
 
 import www.sanju.motiontoast.MotionToast;

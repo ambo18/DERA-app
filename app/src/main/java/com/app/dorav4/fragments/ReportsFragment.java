@@ -18,7 +18,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.app.dorav4.R;
-import com.app.dorav4.activities.PostReportActivity;
+import com.app.dorav4.fragments.activities.PostReportActivity;
 import com.app.dorav4.adapters.ReportsAdapter;
 import com.app.dorav4.models.Reports;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;

@@ -13,8 +13,8 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ReportsViewHolder extends RecyclerView.ViewHolder {
     public CircleImageView ivReportProfile;
-    public TextView tvReportName, tvReportDate, tvReportDisasterType, tvReportAddress, tvReportDescription, tvReportCommentCount, tvReportUpvoteCount;
-    public ImageView ivReportPicture, ivReportComment, ivReportUpvote, ivMore;
+    public TextView tvReportName, tvReportDate, tvReportDisasterType, tvReportAddress, tvReportDescription, tvReportCommentCount;
+    public ImageView ivReportPicture, ivReportComment, ivMore;
 
     public ReportsViewHolder(@NonNull View itemView) {
         super(itemView);
@@ -26,10 +26,8 @@ public class ReportsViewHolder extends RecyclerView.ViewHolder {
         tvReportAddress = itemView.findViewById(R.id.tvReportAddress);
         tvReportDescription = itemView.findViewById(R.id.tvReportDescription);
         tvReportCommentCount = itemView.findViewById(R.id.tvReportCommentCount);
-        tvReportUpvoteCount = itemView.findViewById(R.id.tvReportUpvoteCount);
-        ivReportPicture = itemView.findViewById(R.id.ivReportPicture);
         ivReportComment = itemView.findViewById(R.id.ivReportComment);
-        ivReportUpvote = itemView.findViewById(R.id.ivReportUpvote);
+        ivReportPicture = itemView.findViewById(R.id.ivReportPicture);
         ivMore = itemView.findViewById(R.id.ivMore);
     }
 }

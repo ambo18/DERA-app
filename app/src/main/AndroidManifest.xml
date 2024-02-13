@@ -27,81 +27,81 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DORAV4">
         <activity
-            android:name=".activities.CreditsActivity"
+            android:name=".fragments.activities.CreditsActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.DeviceListActivity"
+            android:name=".fragments.activities.DeviceListActivity"
             android:exported="false"
             android:theme="@style/Theme.MaterialComponents.Light.Dialog" />
         <activity
-            android:name=".activities.BluetoothChatActivity"
+            android:name=".fragments.activities.BluetoothChatActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.TermsAndConditionsActivity"
+            android:name=".fragments.activities.TermsAndConditionsActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.PrivacyPolicyActivity"
+            android:name=".fragments.activities.PrivacyPolicyActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.SettingsActivity"
+            android:name=".fragments.activities.SettingsActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.GuidesActivity"
+            android:name=".fragments.activities.GuidesActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.StartConversationActivity"
+            android:name=".fragments.activities.StartConversationActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.ConversationActivity"
+            android:name=".fragments.activities.ConversationActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.ViewUserActivity"
+            android:name=".fragments.activities.ViewUserActivity"
             android:exported="false"
             android:theme="@style/Theme.MaterialComponents.Light.Dialog" />
         <activity
-            android:name=".activities.FindFriendsActivity"
+            android:name=".fragments.activities.FindFriendsActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.GuidesListActivity"
+            android:name=".fragments.activities.GuidesListActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.HotlinesActivity"
+            android:name=".fragments.activities.HotlinesActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.UpvotesActivity"
+            android:name=".fragments.activities.UpvotesActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.AdvisoriesActivity"
+            android:name=".fragments.activities.AdvisoriesActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.ChangeProfilePictureActivity"
+            android:name=".fragments.activities.ChangeProfilePictureActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.ChangePasswordActivity"
+            android:name=".fragments.activities.ChangePasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.ChangeEmailActivity"
+            android:name=".fragments.activities.ChangeEmailActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.ProfileActivity"
+            android:name=".fragments.activities.ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.CommentsActivity"
+            android:name=".fragments.activities.CommentsActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.ImageFullscreenActivity"
+            android:name=".fragments.activities.ImageFullscreenActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.PostReportActivity"
+            android:name=".fragments.activities.PostReportActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.OfflineDashboardActivity"
+            android:name=".fragments.activities.OfflineDashboardActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.NoInternetActivity"
+            android:name=".fragments.activities.NoInternetActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.SplashActivity"
+            android:name=".fragments.activities.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -110,22 +110,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.ForgotPasswordActivity"
+            android:name=".fragments.activities.ForgotPasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.SetupActivity"
+            android:name=".fragments.activities.SetupActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.RegisterActivity"
+            android:name=".fragments.activities.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.LoginActivity"
+            android:name=".fragments.activities.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".fragments.activities.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.OnboardingActivity"
+            android:name=".fragments.activities.OnboardingActivity"
             android:exported="false" />
 
         <meta-data

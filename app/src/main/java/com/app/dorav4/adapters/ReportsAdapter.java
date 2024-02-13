@@ -20,9 +20,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.airbnb.lottie.LottieAnimationView;
 import com.airbnb.lottie.RenderMode;
 import com.app.dorav4.R;
-import com.app.dorav4.activities.CommentsActivity;
-import com.app.dorav4.activities.ImageFullscreenActivity;
-import com.app.dorav4.activities.UpvotesActivity;
+import com.app.dorav4.fragments.activities.CommentsActivity;
+import com.app.dorav4.fragments.activities.ImageFullscreenActivity;
 import com.app.dorav4.holders.ReportsViewHolder;
 import com.app.dorav4.models.Reports;
 import com.google.firebase.auth.FirebaseAuth;
@@ -55,8 +54,6 @@ public class ReportsAdapter extends RecyclerView.Adapter<ReportsViewHolder> {
 
     String currentUserId;
 
-    boolean processUpvote = false;
-
     public ReportsAdapter(Context context, List<Reports> reportsList) {
         this.context = context;
         this.reportsList = reportsList;
@@ -84,7 +81,6 @@ public class ReportsAdapter extends RecyclerView.Adapter<ReportsViewHolder> {
         String userId = reportsList.get(position).getUserId();
         String profilePicture = reportsList.get(position).getProfilePicture();
         String reportPicture = reportsList.get(position).getReportPicture();
-        String upvotes = reportsList.get(position).getUpvotes();
         String comments = reportsList.get(position).getComments();
         String address = reportsList.get(position).getAddress();
 
@@ -93,7 +89,6 @@ public class ReportsAdapter extends RecyclerView.Adapter<ReportsViewHolder> {
         holder.tvReportDescription.setText(description);
         holder.tvReportDisasterType.setText(disasterType);
         holder.tvReportName.setText(fullName);
-        holder.tvReportUpvoteCount.setText(String.format("%s upvotes", upvotes));
         holder.tvReportCommentCount.setText(String.format("%s comments", comments));
         holder.tvReportAddress.setText(address);
         Picasso.get().load(profilePicture).into(holder.ivReportProfile);
@@ -104,14 +99,8 @@ public class ReportsAdapter extends RecyclerView.Adapter<ReportsViewHolder> {
             holder.ivMore.setVisibility(View.INVISIBLE);
         }
 
-        // Set upvote button color
-        setUpvoteButton(holder, reportId);
-
         // ivMore OnClickListener
         holder.ivMore.setOnClickListener(v -> showReportOption(holder.ivMore, reportId, reportPicture));
-
-        // ivReportUpvote OnClickListener
-        holder.ivReportUpvote.setOnClickListener(v -> upvoteReport(reportId, position));
 
         // ivReportComment OnClickListener
         holder.ivReportComment.setOnClickListener(v -> {
@@ -132,13 +121,6 @@ public class ReportsAdapter extends RecyclerView.Adapter<ReportsViewHolder> {
             // Pass image uri to the next intent
             Intent intent = new Intent(context, ImageFullscreenActivity.class);
             intent.putExtra("reportPicture", reportPicture);
-            context.startActivity(intent);
-        });
-
-        // tvReportUpvoteCount OnClickListener
-        holder.tvReportUpvoteCount.setOnClickListener(v -> {
-            Intent intent = new Intent(context, UpvotesActivity.class);
-            intent.putExtra("reportId", reportId);
             context.startActivity(intent);
         });
     }
@@ -239,56 +221,6 @@ public class ReportsAdapter extends RecyclerView.Adapter<ReportsViewHolder> {
                     MotionToast.LONG_DURATION,
                     ResourcesCompat.getFont(context, R.font.helvetica_regular)
             );
-        });
-    }
-
-    // Add and remove upvote from a report
-    private void upvoteReport(String reportId, int position) {
-        int reportUpvotes = Integer.parseInt(reportsList.get(position).getUpvotes());
-        processUpvote = true;
-
-        // Add or subtract from upvote count
-        DatabaseReference upvotesReference = FirebaseDatabase.getInstance().getReference("Reports").child(reportId).child("Upvotes");
-
-        upvotesReference.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if (snapshot.child(reportId).hasChild(currentUserId)) {
-                    // Remove upvote
-                    reportsReference.child(reportId).child("upvotes").setValue("" + (reportUpvotes - 1));
-                    upvotesReference.child(reportId).child(currentUserId).removeValue();
-                } else {
-                    // Upvote report
-                    reportsReference.child(reportId).child("upvotes").setValue("" + (reportUpvotes + 1));
-                    upvotesReference.child(reportId).child(currentUserId).setValue("Upvoted");
-                }
-                processUpvote = false;
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-            }
-        });
-    }
-
-    // Set upvote button to green if user upvoted or has already upvoted
-    private void setUpvoteButton(ReportsViewHolder holder, String reportId) {
-        DatabaseReference upvotesReference = FirebaseDatabase.getInstance().getReference("Reports").child(reportId).child("Upvotes");
-
-        upvotesReference.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if (snapshot.child(reportId).hasChild(currentUserId)) {
-                    // Current user upvoted the report
-                    holder.ivReportUpvote.setImageResource(R.drawable.ic_upvoted);
-                } else {
-                    holder.ivReportUpvote.setImageResource(R.drawable.ic_upvote);
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-            }
         });
     }
 

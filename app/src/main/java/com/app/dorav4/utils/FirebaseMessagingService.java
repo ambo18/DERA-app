@@ -15,7 +15,7 @@ import androidx.core.app.NotificationCompat;
 import androidx.preference.PreferenceManager;
 
 import com.app.dorav4.R;
-import com.app.dorav4.activities.SplashActivity;
+import com.app.dorav4.fragments.activities.SplashActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;

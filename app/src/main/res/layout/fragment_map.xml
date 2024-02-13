@@ -7,45 +7,11 @@
     android:background="@color/background"
     tools:context=".fragments.MapFragment">
 
-    <com.gauravk.bubblenavigation.BubbleNavigationConstraintView
-        android:id="@+id/mapNavigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/background"
-        android:elevation="2dp"
-        android:padding="12dp"
-        app:bnc_mode="spread"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <com.gauravk.bubblenavigation.BubbleToggleView
-            android:id="@+id/navDisasters"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:bt_active="true"
-            app:bt_colorActive="@color/primary_green"
-            app:bt_colorInactive="@color/primary_gray"
-            app:bt_icon="@drawable/ic_disasters"
-            app:bt_title="Disasters" />
-
-        <com.gauravk.bubblenavigation.BubbleToggleView
-            android:id="@+id/navEvacuationArea"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:bt_active="true"
-            app:bt_colorActive="@color/primary_green"
-            app:bt_colorInactive="@color/primary_gray"
-            app:bt_icon="@drawable/ic_evacuation_areas"
-            app:bt_title="Evacuate" />
-    </com.gauravk.bubblenavigation.BubbleNavigationConstraintView>
-
     <FrameLayout
         android:id="@+id/mapContainer"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mapNavigation" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

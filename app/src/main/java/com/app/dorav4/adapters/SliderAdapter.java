@@ -26,21 +26,18 @@ public class SliderAdapter extends PagerAdapter {
             R.drawable.img_welcome,
             R.drawable.img_take_photo,
             R.drawable.img_verify,
-            R.drawable.img_post_photo,
     };
 
     int[] titles = {
             R.string.slider_first_title,
             R.string.slider_second_title,
             R.string.slider_third_title,
-            R.string.slider_fourth_title,
     };
 
     int[] descriptions = {
             R.string.slider_first_desc,
             R.string.slider_second_desc,
             R.string.slider_third_desc,
-            R.string.slider_fourth_desc,
     };
 
     @Override

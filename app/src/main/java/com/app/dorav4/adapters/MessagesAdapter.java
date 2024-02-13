@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.app.dorav4.R;
-import com.app.dorav4.activities.ConversationActivity;
+import com.app.dorav4.fragments.activities.ConversationActivity;
 import com.app.dorav4.holders.UsersViewHolder;
 import com.app.dorav4.models.Users;
 import com.google.firebase.auth.FirebaseAuth;

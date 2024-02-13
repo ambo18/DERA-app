@@ -136,30 +136,6 @@
                 app:layout_constraintTop_toBottomOf="@+id/tvReportDescription" />
 
             <ImageView
-                android:id="@+id/ivReportUpvote"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvReportDescription"
-                app:srcCompat="@drawable/ic_upvote"
-                tools:ignore="ContentDescription" />
-
-            <TextView
-                android:id="@+id/tvReportUpvoteCount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/raleway"
-                android:text="@string/placeholder_upvotes"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/ivReportUpvote"
-                app:layout_constraintTop_toBottomOf="@+id/tvReportDescription"
-                app:layout_constraintVertical_bias="0.0" />
-
-            <ImageView
                 android:id="@+id/ivMore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

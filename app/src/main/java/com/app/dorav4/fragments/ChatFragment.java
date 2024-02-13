@@ -14,7 +14,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.app.dorav4.R;
-import com.app.dorav4.activities.StartConversationActivity;
+import com.app.dorav4.fragments.activities.StartConversationActivity;
 import com.app.dorav4.adapters.MessagesAdapter;
 import com.app.dorav4.models.Users;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
